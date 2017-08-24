@@ -19,6 +19,20 @@ public class TstWS {
         a=50;
         b=27;
         c=operacionSuma(a,b);
+        long n,i;
+        int x,y,z;
+        long t0,t1,deltaT;
+        n=1000;
+        t0=System.nanoTime();
+        for(i=0; i<n; i++){
+            x=(int) (10000.0*Math.random());
+            y=(int) (10000.0*Math.random());
+            z=operacionSuma(a,b);
+        }
+        t1=System.nanoTime();
+        deltaT=t1-t0;
+        System.out.println("Ha tardado "+ deltaT + " nanoSeg");
+                
         System.out.println("la suma de "+ a + " + " + b + " = " + c );
     }
 
