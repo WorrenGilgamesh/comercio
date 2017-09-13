@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://172.18.224.1:8080/EscBaileWeb/altaAlum?WSDL" uri="xml-resources/web-service-references/altaAlum/wsdl/172.18.224.1_8080/EscBaileWeb/altaAlum.wsdl"/>
+    <system systemId="http://172.18.224.1:8080/EscBaileWeb/altaAlum?xsd=1" uri="xml-resources/web-service-references/altaAlum/wsdl/172.18.224.1_8080/EscBaileWeb/altaAlum.xsd_1.xsd"/>
+</catalog>
