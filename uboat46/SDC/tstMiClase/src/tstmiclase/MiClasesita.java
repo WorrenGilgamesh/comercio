@@ -1,22 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package tstmiclase;
-
-/**
- *
- * @author sdist
- */
-public class MiClasesita {
-    public static void main(String[] args) {
-        int i = 0;
-        System.out.println("Soy MiClasesita.main");
-        if(args.length > 0) System.out.println("Argumentos:");
-        for (String arg : args){
-            System.out.println("args["+i+"] = " + arg);
-            i++;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e649dcfdd2a698cf0d9b72af20ed9cec4b29b7884c62fb38f923fd55aa8bd4c2
+size 586

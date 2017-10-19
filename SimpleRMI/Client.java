@@ -1,31 +1,3 @@
-//package example.hello;
-
-    import java.rmi.registry.LocateRegistry;
-    import java.rmi.registry.Registry;
-
-    public class Client {
-
-        private Client() {}
-
-        public static void main(String[] args) {
-            long i;
-            String response;
-            String host = (args.length < 1) ? null : args[0];
-            try 
-            {
-                Registry registry = LocateRegistry.getRegistry(host);
-                Hello stub = (Hello) registry.lookup("Hello");
-                for(i=0;i<20000;i++)
-                {
-                  response = stub.sayHello();
-                  System.out.println("response: " + response);
-                } 
-            } 
-            catch (Exception e) 
-            {
-                System.err.println("Client exception: " + e.toString());
-                e.printStackTrace();
-            }
-        }
-    }
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:0eef4e3a81987750111994f9f070e01a1e99273e33bd6bafbacfb12eef6221ab
+size 908

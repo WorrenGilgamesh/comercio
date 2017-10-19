@@ -1,22 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package tstmiclase;
-
-/**
- *
- * @author sdist
- */
-public class OtraClase {
-    public static void main(String[] args) {
-        int i = 0;
-        System.out.println("Soy OtraClase.main");
-        if(args.length > 0) System.out.println("Argumentos:");
-        for (String arg : args){
-            System.out.println("args["+i+"] = "+arg);
-            i++;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:13c37a5bb97bae58cdfecb17bac898f4b805c039fe6a13746ceaf57dee6883e2
+size 580
