@@ -1,0 +1,1 @@
+java -jar ./ClteVtasOnLinePojo/dist/ClteVtasOnLinePojo.jar

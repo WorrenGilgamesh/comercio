@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://wsap/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://wsap/">
+
+<xs:element name="alta" type="tns:alta"/>
+
+<xs:element name="altaResponse" type="tns:altaResponse"/>
+
+<xs:element name="ap" type="tns:ap"/>
+
+<xs:element name="apResponse" type="tns:apResponse"/>
+
+<xs:element name="hello" type="tns:hello"/>
+
+<xs:element name="helloResponse" type="tns:helloResponse"/>
+
+<xs:complexType name="ap">
+<xs:sequence>
+<xs:element name="parameter" type="tns:pedido" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pedido">
+<xs:sequence>
+<xs:element name="cliente" type="xs:string" minOccurs="0"/>
+<xs:element name="invoiceNumber" type="xs:string" minOccurs="0"/>
+<xs:element name="productos">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="key" minOccurs="0" type="xs:string"/>
+<xs:element name="value" minOccurs="0" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="total" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="apResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mensaje" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="mensaje">
+<xs:sequence>
+<xs:element name="blnRes" type="xs:boolean"/>
+<xs:element name="intRes" type="xs:int"/>
+<xs:element name="strMsg" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="alta">
+<xs:sequence>
+<xs:element name="cadena" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="altaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:mensaje" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
